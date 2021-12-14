@@ -1,0 +1,76 @@
+.Form{
+    padding: 40px;
+    margin-top: 3vmin;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+.Form__title{
+    text-align: center;
+    font-size: 18px;
+}
+.Form__input{
+    text-transform: uppercase;
+    transition: 0.5s;
+    outline: none;
+    border:2px solid aquamarine;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding: 8px 12px;
+    width: 33vmax;
+    margin-right: 12px;
+}
+
+.Form__btn{
+    margin-bottom: 18px;
+    background-color: cadetblue;
+    margin:0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    padding: 13px 16px;
+    color: #fff;
+    border: none;
+}
+.Form__btn:hover{
+    transition: 0.5s;
+    background-color: aqua;
+}
+
+.Form__btn:focus{
+border: 1px solid slateblue;
+outline: none;
+}
+
+.error__Input{
+    outline: none;
+    border: none;
+    box-shadow:0px 0px 3px red;
+}
+.Vip__List{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200vh;
+}
+.error__text{
+    padding-top: 20px;
+    color: red;
+    text-align: center;
+}
+
+@media screen and (max-width:900px){
+    .Form__input{
+        width: 50vmax;
+    }
+    .Form__btn{
+        width: 30vmax;
+    }
+}
